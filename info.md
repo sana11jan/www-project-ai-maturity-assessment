@@ -1,17 +1,11 @@
 ### AI Maturity Assessment Information
 * [Incubator Project](#)
-* [Type of Project](#)
-* [Version 0.0.0](#)
-* [Builder](#)
-* [Breaker](#)
+* <i class="fas fa-book" style="color:#233e81;"></i> Documentation
+* <i class="fas fa-hammer" style="color:#233e81;"></i> Breaker
+* <i class="fas fa-toolbox" style="color:#233e81;"></i> Builder
 
-### Downloads or Social Links
-* [Download](#)
-* [Meetup](#)
+### Social
+* [Join OWASP Slack](https://owasp.org/slack/invite)
 
-### Code Repository
-* [repo](#)
 
-### Change Log
-* [changes](#)
 
