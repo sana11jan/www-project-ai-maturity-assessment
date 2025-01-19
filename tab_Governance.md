@@ -1,6 +1,6 @@
 ---
 title: AI Governance
-displaytext:  AI Governance
+displaytext: AI Governance
 layout:  null
 tab: true
 order: 1
