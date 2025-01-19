@@ -19,13 +19,13 @@ The OWASP AI Maturity Assessment (AIMA) aims to be the premier framework that en
 ### Road Map
 Phase 1: Initial Draft and Community Engagement (Jan-Feb 2025)
 
-* Publish the first draft of the core project framework. This will outline the vision, mission, and foundational structure of AIMA.
 * Set up a dedicated team to support the development and promotion of AIMA.
-* Launch community engagement initiatives to gather input and foster brainstorming sessions, driving collective feedback on the initial draft.
+* Launch team engagement initiatives to gather input and foster brainstorming sessions, driving collective feedback on the initial draft.
+* Publish the first draft of the core project framework. This will outline the vision, mission, and foundational structure of AIMA.
 
 Phase 2: Framework Development and Pilot Testing (March-May 2025)
 
-* Refine the initial draft based on community feedback, and develop a more detailed framework covering the key areas: ethics, security, and governance.
+* Refine the initial draft based on community feedback, and develop a more detailed framework covering the key areas of AI Governance.
 * Initiate pilot testing with a selection of organizations to validate the framework's effectiveness and gather real-world insights.
 * Expand community outreach to build partnerships and secure contributions from industry experts.
 
