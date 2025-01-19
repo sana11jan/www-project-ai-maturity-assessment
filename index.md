@@ -2,10 +2,10 @@
 
 layout: col-sidebar
 title: OWASP AI Maturity Assessment
-tags: example-tag
-level: 2
+tags: AIMA
+level: 3
 type: documentation
-pitch: A very brief, one-line description of your project
+pitch: OWASP AI Maturity Assessment
 
 ---
 
