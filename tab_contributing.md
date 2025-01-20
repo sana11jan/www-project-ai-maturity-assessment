@@ -1,6 +1,6 @@
 ---
 title: Start-Contributing 
-displaytext: Start Contributing
+displaytext: Start-Contributing
 layout:  col-sidebar
 tab: true
 order: 4
