@@ -11,8 +11,9 @@ With the growing interest and adoption of AI technologies, it's critical to esta
 
 In recent months, several AI Maturity Models have emerged, including the MITRE AI Framework, which highlights the need for structured AI assessments. Building on this momentum, we are developing the OWASP AI Maturity Assessment (AIMA), using the Software Assurance Maturity Model (SAMM) as a foundation.
 
-Mission Statement:
-The OWASP AI Maturity Assessment (AIMA) aims to be the premier framework that enables organizations to assess, analyze, and improve the security and responsible usage of AI technologies. Like OWASP SAMM, AIMA will be technology and process agnostic, delivering a risk-driven approach that guides organizations in managing AI systems throughout their entire lifecycle.
+The AI Maturity Assessment (AIMA) project empowers organizations to navigate the complexities of artificial intelligence by providing a structured framework for making informed decisions about acquiring or developing AI systems. As AI continues to revolutionize industries, organizations face critical decisions about integrating these technologies responsibly. AIMA helps them evaluate AI systems' alignment with ethical principles, security standards, and operational goals while mitigating risks and ensuring long-term sustainability.
+
+By bridging the gap between high-level AI principles and actionable implementation strategies, AIMA ensures that organizations not only adopt AI systems that align with their strategic objectives but also foster trust and accountability in their AI initiatives.
 
 ### Road Map
 Phase 1: Initial Draft and Community Engagement (Jan-Feb 2025)
