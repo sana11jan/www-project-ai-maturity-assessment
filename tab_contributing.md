@@ -1,5 +1,5 @@
 ---
-title: Start-Contributing 
+title: contributing 
 displaytext: Start-Contributing
 layout:  col-sidebar
 tab: true
