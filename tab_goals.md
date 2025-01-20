@@ -7,7 +7,8 @@ order: 1
 tags: AIMA
 ---
 
-#### OWASP AIMA Project Goals
+
+### OWASP AIMA Project Goals
 
 The OWASP AI Maturity Assessment (AIMA) project aims to provide organizations with a comprehensive framework to navigate the complexities of artificial intelligence systems responsibly. As AI continues to transform industries, organizations face critical challenges in ensuring that their AI systems are ethical, secure, transparent, and aligned with both organizational goals and societal values.
 
