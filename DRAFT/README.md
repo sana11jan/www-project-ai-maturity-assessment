@@ -8,7 +8,7 @@ tags: AIMA
 
 # Table of Contents
 
-[1.Introduction](content/1.Introduction.md)
+[1.Introduction](DRAFT/content/1.Introduction.md)
 
 [--1.1 Why another maturity model?](content/1.1Why-another-maturity-model.md)
 
