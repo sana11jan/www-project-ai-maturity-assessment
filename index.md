@@ -1,12 +1,10 @@
 ---
-
 layout: col-sidebar
 title: OWASP AI Maturity Assessment
 tags: AIMA
-level: 3
+level: 4
 type: documentation
 pitch: OWASP AI Maturity Assessment
-
 ---
 
 With the growing interest and adoption of AI technologies, it's critical to establish a framework that organizations can use to measure and enhance their AI maturity levels.
