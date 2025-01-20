@@ -1,4 +1,5 @@
-OWASP AI Maturity Assessment
+OWASP AI Maturity Assessment Project
+
 With the growing interest and adoption of AI technologies, it’s critical to establish a framework that organizations can use to measure and enhance their AI maturity levels.
 
 In recent months, several AI Maturity Models have emerged, including the MITRE AI Framework, which highlights the need for structured AI assessments. Building on this momentum, we are developing the OWASP AI Maturity Assessment (AIMA), using the Software Assurance Maturity Model (SAMM) as a foundation.
