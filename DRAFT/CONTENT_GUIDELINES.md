@@ -5,7 +5,7 @@ The content is structured as chapters and sections in Markdown. Please Follow th
 # Folder and File Structure
 * Top-level folders represent major chapters (H1).
 * Each folder contains:
-    * _index.md → Defines the chapter title (starts with `#`).
+    * 00_index.md → Defines the chapter title (starts with `#`).
     * Numbered .md files → Each file is a section (starts with `##`).
     * Optional assets (images, diagrams) stored in /assets/ or relative paths.
 
@@ -18,23 +18,21 @@ The content is structured as chapters and sections in Markdown. Please Follow th
 ├── 30_Risk_Safety.md           # Starts with "## Risk and Safety"
 ```
 
-Sorting note: The _index.md file will always sort first due to the leading underscore. 
+Sorting note: The 00_index.md file will always be the first file, hence the 00 prefix. 
 Numbered files (10_, 20_, 30_) define section order.
 
 # Markdown Heading Rules
 |     **File type**      | **Required first heading** |      **Syntax**      |
 |:----------------------:|:--------------------------:|:--------------------:|
-|       _index.md        |       Chapter title        |      `#` Title       |
+|      00_index.md       |       Chapter title        |      `#` Title       |
 |   Section .md files    |       Section title        |      `##` Title      |
 | Subsections (optional) |        Subheadings         | `###`, `####`, etc.  |
 
 * Do not use `#` headings inside section .md files.
-* _index.md files only exist on the first level
-* Only one `#` heading per chapter — located in _index.md.
-* If you want an intro for the Subsection, start with a 00_intro.md file.
+* Only one `#` heading per chapter — located in 00_index.md.
 ⠀
 # Numbering and File Naming Conventions
-* Prefix section files with 10_, 20_, 30_, etc., to control sort order. 00 is reserved for intros. 
+* Prefix section files with 10_, 20_, 30_, etc., to control sort order. 00 is reserved for index. 
 * Use gaps between numbers for future insertions.
 * Avoid renumbering existing files without a valid reason.
 ⠀
