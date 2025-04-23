@@ -1,9 +1,17 @@
 ## Strategy and Metrics
 DRAFT
 
-Introduction:
+### Introduction
 
-# Draft: Governance - Strategy and Metrics
+The Strategy & Metrics practice sits at the foundation of AI-security governance. Its purpose is to make sure the organization knows where it is going with AI security (the strategy) and how it will know it is getting there (the metrics). By defining a clear, business-aligned AI-security strategy and pairing it with objective, repeatable measures of success, leaders gain the insight needed to allocate resources, manage risk, and demonstrate return on investment. Sound strategy keeps AI initiatives pointed toward the organization’s risk appetite and regulatory obligations, while robust metrics turn vague goals into actionable data that drives continuous improvement across the AI lifecycle.
+
+### Objectives
+
+- Align AI Security Strategy with organizational business goals and risk management.
+- Define and Track AI Security Metrics that guide improvements and demonstrate value.
+- Ensure Continuous Improvement of AI security practices through iterative reviews.
+
+# Governance - Strategy and Metrics
 
 | Maturity Level | Stream A - Create and Promote | Stream B - Measure and Improve |
 |----------------|-------------------------------|-------------------------------|
