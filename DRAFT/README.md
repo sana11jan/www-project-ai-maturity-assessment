@@ -18,7 +18,7 @@ tags: AIMA
 
 [-- 2.1 Governance](content/10_Governance/00_index.md)
 
-[-- 2.2 Responsible AI Principles](content/20_Responsible_AI_Principles/00_index.md)
+[-- 2.2 Responsible AI Principles](content/20_Responsible_AI/00_index.md)
 
 [-- 2.3 Data Management](content/30_Data_Management/00_index.md)
 
