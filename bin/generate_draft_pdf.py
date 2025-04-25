@@ -191,7 +191,7 @@ def generate_pdf(input_dir: Path, output_file: Path):
         }}
 
         .toc h2 {{
-            font-family: 'Georgia', serif;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
             font-size: 2em;
             margin-bottom: 1em;
             border-bottom: 1px solid #ccc;
