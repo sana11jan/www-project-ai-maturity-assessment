@@ -1,15 +1,34 @@
 #!/usr/bin/env python3
 import argparse
 import re
+import subprocess
 from datetime import datetime
 from markdown import markdown
 from pathlib import Path
 from weasyprint import HTML
 
+# Toggle to enable/disable structural validation
+VALIDATE_STRUCTURE = False
 
 def sanitize_heading(text):
     return re.sub(r'[^a-zA-Z0-9_-]', '', text.replace(' ', '_'))
 
+def get_git_info():
+    try:
+        commit = subprocess.check_output(["git", "rev-parse", "--short", "HEAD"]).decode().strip()
+        branch = subprocess.check_output(["git", "rev-parse", "--abbrev-ref", "HEAD"]).decode().strip()
+        return branch, commit
+    except Exception:
+        return "unknown", "unknown"
+
+def validate_markdown(file_path: Path, html: str):
+    headings = re.findall(r'<h([12])>(.*?)</h\1>', html)
+
+    if VALIDATE_STRUCTURE:
+        if not any(level == '1' for level, _ in headings):
+            raise ValueError(f"Validation failed: No <h1> heading found in {file_path}")
+
+    return headings
 
 def generate_pdf(input_dir: Path, output_file: Path):
     markdown_files = sorted(input_dir.rglob('*.md'), key=lambda p: str(p))
@@ -20,14 +39,21 @@ def generate_pdf(input_dir: Path, output_file: Path):
     for file in markdown_files:
         with open(file, encoding='utf-8') as f:
             html = markdown(f.read(), extensions=['extra', 'nl2br', 'sane_lists'])
-            headings = re.findall(r'<h1>(.*?)</h1>', html)
-            for heading in headings:
+            headings = validate_markdown(file.relative_to(input_dir), html)
+
+            for level, heading in headings:
                 anchor = sanitize_heading(heading)
-                toc_entries.append(f"<li><a href='#{anchor}'>{heading}</a></li>")
-                html = html.replace(f"<h1>{heading}</h1>", f"<h1 id='{anchor}'>{heading}</h1>")
+                toc_entries.append(
+                    f"<li class='toc-level-{level}'><a href='#{anchor}'>{heading}</a></li>"
+                )
+                html = html.replace(
+                    f"<h{level}>{heading}</h{level}>",
+                    f"<h{level} id='{anchor}'>{heading}</h{level}>"
+                )
             content_blocks.append(html)
 
     current_date = datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')
+    branch, commit = get_git_info()
 
     combined_html = f"""
 <html>
@@ -59,6 +85,7 @@ def generate_pdf(input_dir: Path, output_file: Path):
             margin-bottom: 0.5em;
             border-bottom: 2px solid #888;
             page-break-before: always;
+            break-before: page;
             line-height: 1.1;
         }}
 
@@ -67,6 +94,7 @@ def generate_pdf(input_dir: Path, output_file: Path):
             margin-top: 2em;
             margin-bottom: 0.4em;
             line-height: 1.2;
+            break-inside: avoid;
         }}
 
         h3 {{
@@ -75,6 +103,12 @@ def generate_pdf(input_dir: Path, output_file: Path):
             margin-bottom: 0.3em;
             letter-spacing: 0.05em;
             line-height: 1.25;
+            break-inside: avoid;
+        }}
+
+        p, li, table, blockquote {{
+            orphans: 2;
+            widows: 2;
         }}
 
         .watermark {{
@@ -103,6 +137,7 @@ def generate_pdf(input_dir: Path, output_file: Path):
             border: 1px solid #ddd;
             padding: 6px 10px;
             text-align: left;
+            vertical-align: top;
         }}
 
         th {{
@@ -147,8 +182,14 @@ def generate_pdf(input_dir: Path, output_file: Path):
         }}
 
         .toc li {{
-            margin: 0.4em 0;
-            font-size: 1.1em;
+            margin: 0.2em 0;
+            font-size: 1.05em;
+            line-height: 1.6;
+        }}
+
+        .toc li.toc-level-2 {{
+            margin-left: 1.5em;
+            font-size: 1em;
         }}
     </style>
 </head>
@@ -157,6 +198,7 @@ def generate_pdf(input_dir: Path, output_file: Path):
     <div class='cover'>
         <h1>Project AIMA</h1>
         <p>Draft generated on: {current_date}</p>
+        <p>Branch: {branch} | Commit: {commit}</p>
     </div>
     <div class='toc'>
         <h2>Table of Contents</h2>
@@ -171,7 +213,6 @@ def generate_pdf(input_dir: Path, output_file: Path):
 
     output_file.parent.mkdir(parents=True, exist_ok=True)
     HTML(string=combined_html).write_pdf(str(output_file))
-
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
