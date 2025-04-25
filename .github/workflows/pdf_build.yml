@@ -24,7 +24,7 @@ jobs:
           pip install markdown weasyprint
 
       - name: Generate PDF
-        run: python ./bin/generate_draft_pdf.py DRAFT/content ./combined_draft.pdf
+        run: python ./bin/generate_pdf_preview.py DRAFT/content ./combined_draft.pdf
         working-directory: ${{ github.workspace }}
 
       - name: Upload artifact

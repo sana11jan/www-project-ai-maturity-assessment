@@ -182,10 +182,21 @@ def generate_pdf(input_dir: Path, output_file: Path):
         }}
 
         .cover p {{
-            font-size: 1.2em;
-            margin-top: 1em;
+            font-size: 1em;
+            margin-top: 2em;
         }}
-
+        .disclaimer {{
+            margin: 2em 0;
+            padding: 1.5em;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            font-size: 0.95em;
+            page-break-after: always;
+        }}
+        .disclaimer h2 {{
+            margin-top: 0;
+            font-size: 1.6em;
+        }}
         .toc {{
             page-break-after: always;
         }}
@@ -218,8 +229,14 @@ def generate_pdf(input_dir: Path, output_file: Path):
     <div class='watermark'>DRAFT</div>
     <div class='cover'>
         <h1>Project AIMA</h1>
-        <p>PDF generated on: {current_date}</p>
-        <p>Branch: {branch} | Commit: {commit}</p>
+        <p>PDF Preview generated on: {current_date}<br/>
+        From Branch: {branch} <br/>
+        Commit: {commit}</p>
+    </div>
+    <div class='disclaimer'>
+        <h2>Draft Disclaimer</h2>
+        <p>This PDF is an automatically generated draft intended for internal review and development purposes. It is <strong>not final</strong>, <strong>not publication-ready</strong>, and may contain formatting or structural inconsistencies.</p>
+        <p>Content, structure, and layout are subject to change. For questions or feedback, please refer to the project repository or contact via Slack.</p>
     </div>
     <div class='toc'>
         <h2>Table of Contents</h2>
