@@ -36,20 +36,41 @@ def generate_pdf(input_dir: Path, output_file: Path):
     toc_entries = []
     content_blocks = []
 
+    h1_counter = 0
+    h2_counter = 0
+    h3_counter = 0
+
     for file in markdown_files:
         with open(file, encoding='utf-8') as f:
             html = markdown(f.read(), extensions=['extra', 'nl2br', 'sane_lists'])
             headings = validate_markdown(file.relative_to(input_dir), html)
 
             for level, heading in headings:
-                anchor = sanitize_heading(heading)
+                if level == '1':
+                    h1_counter += 1
+                    h2_counter = 0
+                    h3_counter = 0
+                    number = f"{h1_counter}"
+                elif level == '2':
+                    h2_counter += 1
+                    h3_counter = 0
+                    number = f"{h1_counter}.{h2_counter}"
+                elif level == '3':
+                    h3_counter += 1
+                    number = f"{h1_counter}.{h2_counter}.{h3_counter}"
+                else:
+                    number = ""
+
+                numbered_heading = f"{number}&nbsp;{heading}"
+                anchor = sanitize_heading(f"{number}_{heading}")
                 toc_entries.append(
-                    f"<li class='toc-level-{level}'><a href='#{anchor}'>{heading}</a></li>"
+                    f"<li class='toc-level-{level}'><a href='#{anchor}'>{numbered_heading}</a></li>"
                 )
                 html = html.replace(
                     f"<h{level}>{heading}</h{level}>",
-                    f"<h{level} id='{anchor}'>{heading}</h{level}>"
+                    f"<h{level} id='{anchor}'>{numbered_heading}</h{level}>"
                 )
+
             content_blocks.append(html)
 
     current_date = datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')
@@ -197,7 +218,7 @@ def generate_pdf(input_dir: Path, output_file: Path):
     <div class='watermark'>DRAFT</div>
     <div class='cover'>
         <h1>Project AIMA</h1>
-        <p>Draft generated on: {current_date}</p>
+        <p>PDF generated on: {current_date}</p>
         <p>Branch: {branch} | Commit: {commit}</p>
     </div>
     <div class='toc'>
