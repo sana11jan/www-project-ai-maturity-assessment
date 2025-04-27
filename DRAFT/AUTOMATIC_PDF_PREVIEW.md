@@ -2,7 +2,7 @@
 This repository includes a **PDF Preview Tool** that generates a combined, draft-quality PDF from all Markdown files in the document structure. It provides a unified, high-level view of the evolving documentation during development.
 **Note:** The preview PDF is intended for internal use only and is **not final**.
 
-# Purpose
+## Purpose
 * Offer a **full-document perspective** beyond individual Markdown files.
 * Help maintain a **consistent structure** across chapters and sections (headings, tables, emphasis, terminology, etc.).
 * Encourage careful use of **abbreviations vs. full names** (e.g., AIMA vs. AIMA (AI Maturity Assessment)).
@@ -12,7 +12,7 @@ This repository includes a **PDF Preview Tool** that generates a combined, draft
 
 ⠀The tool is intended to **catch structural issues early**, **improve overall document quality**, and **simplify cross-author collaboration**.
 
-# How It Works
+## How It Works
 * All .md files are automatically collected from the document root and its subdirectories.
 * Files are sorted **lexicographically** based on path, reflecting the intended document structure.
 * Headings are automatically **numbered** for clarity (1, 1.2, 1.2.3).
@@ -21,16 +21,19 @@ This repository includes a **PDF Preview Tool** that generates a combined, draft
 * **Branch** and **commit** information is embedded for version traceability.
 
 ⠀
-# GitHub Actions
+## GitHub Actions
 The PDF is generated automatically via GitHub Actions after each commit to the repository or your fork.
 * Visit the **Actions** tab after pushing your changes.
 * Locate the latest workflow run and download your generated PDF.
 * No local execution required — the build process typically takes less than a minute.
 
+
+## Structure and Validation
+The **PDF Preview Tool** follows the [Content Guidelines](./CONTENT_GUIDELINES.md) in terms of structure and naming.
+Any structural issues will cause the GitHub Action to fail, if validation is enabled in the future.
+
 ⠀
-# Important Notes
-* Respect the **folder and file structure**: it defines the document order.
-* Ensure each major section begins with a **single** # Heading 1.
-* Use ## Heading 2 and ### Heading 3 consistently for subsections.
-* Be mindful of **terminology consistency**, especially for abbreviations, acronyms, and technical terms.
-* Strive for **clean, readable typography** — it matters as much as the content.
+# Final Thoughts
+
+Documentation is more than assembling words — it's about crafting a coherent experience for the reader.
+The PDF Preview Tool supports that journey by helping authors see the bigger picture, write with intent, and deliver better documents together.
