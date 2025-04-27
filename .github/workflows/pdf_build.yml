@@ -1,4 +1,4 @@
-name: Build PDF on Merge to Main
+name: Build PDF Preview on all Branches
 
 on:
   push:

@@ -229,14 +229,16 @@ def generate_pdf(input_dir: Path, output_file: Path):
     <div class='watermark'>DRAFT</div>
     <div class='cover'>
         <h1>Project AIMA</h1>
-        <p>PDF Preview generated on: {current_date}<br/>
+        <p><b>PDF Preview</b></p> 
+        <p>Generated on: {current_date} <br/>
         From Branch: {branch} <br/>
-        Commit: {commit}</p>
+        From Commit: {commit}</p>
+
     </div>
     <div class='disclaimer'>
         <h2>Draft Disclaimer</h2>
         <p>This PDF is an automatically generated draft intended for internal review and development purposes. It is <strong>not final</strong>, <strong>not publication-ready</strong>, and may contain formatting or structural inconsistencies.</p>
-        <p>Content, structure, and layout are subject to change. For questions or feedback, please refer to the project repository or contact via Slack.</p>
+        <p>Content, structure, and layout are subject to change. For questions or feedback, please refer to the project repository or connect via Slack.</p>
     </div>
     <div class='toc'>
         <h2>Table of Contents</h2>
