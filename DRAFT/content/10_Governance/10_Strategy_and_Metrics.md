@@ -1,4 +1,4 @@
-## AIMA Strategy and Metrics
+## Strategy and Metrics
 DRAFT
 
 ### Introduction

@@ -1,5 +1,5 @@
 
-## AIMA Policy and Compliance  
+## Policy and Compliance  
 DRAFT  
 
 ### Introduction  

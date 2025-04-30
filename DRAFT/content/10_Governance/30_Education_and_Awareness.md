@@ -1,4 +1,4 @@
-## AIMA Education and Guidance  
+## Education and Guidance  
 DRAFT  
 
 ### Introduction  
