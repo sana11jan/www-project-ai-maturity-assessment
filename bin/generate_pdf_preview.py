@@ -21,6 +21,19 @@ def get_git_info():
     except Exception:
         return "unknown", "unknown"
 
+def transform_special_blockquotes(md_text: str) -> str:
+    md_text = re.sub(
+        r'(?m)^> NOTE:\s*(.*)',
+        r'<blockquote class="note"><strong>Note:</strong> \1</blockquote>',
+        md_text
+    )
+    md_text = re.sub(
+        r'(?m)^> COMMENT:\s*(.*)',
+        r'<blockquote class="comment"><strong>Comment:</strong> \1</blockquote>',
+        md_text
+    )
+    return md_text
+
 def validate_markdown(file_path: Path, html: str):
     headings = re.findall(r'<h([12])>(.*?)</h\1>', html)
 
@@ -42,7 +55,9 @@ def generate_pdf(input_dir: Path, output_file: Path):
 
     for file in markdown_files:
         with open(file, encoding='utf-8') as f:
-            html = markdown(f.read(), extensions=['extra', 'nl2br', 'sane_lists'])
+            raw_md = f.read()
+            raw_md = transform_special_blockquotes(raw_md)
+            html = markdown(raw_md, extensions=['extra', 'nl2br', 'sane_lists'])
             headings = validate_markdown(file.relative_to(input_dir), html)
 
             for level, heading in headings:
@@ -166,6 +181,24 @@ def generate_pdf(input_dir: Path, output_file: Path):
             font-weight: 600;
         }}
 
+        blockquote {{
+            background-color: #f5f5f5;
+            border-left: 4px solid #bbb;
+            padding: 0.8em 1.2em;
+            margin: 1.2em 0;
+            font-size: 0.95em;
+        }}
+
+        blockquote.note {{
+            background-color: #fff8dc;
+            border-left: 4px solid #f0c040;
+        }}
+
+        blockquote.comment {{
+            background-color: #e6f0ff;
+            border-left: 4px solid #6699cc;
+        }}
+
         .cover {{
             display: flex;
             flex-direction: column;
@@ -185,6 +218,7 @@ def generate_pdf(input_dir: Path, output_file: Path):
             font-size: 1em;
             margin-top: 2em;
         }}
+
         .disclaimer {{
             margin: 2em 0;
             padding: 1.5em;
@@ -193,10 +227,12 @@ def generate_pdf(input_dir: Path, output_file: Path):
             font-size: 0.95em;
             page-break-after: always;
         }}
+
         .disclaimer h2 {{
             margin-top: 0;
             font-size: 1.6em;
         }}
+
         .toc {{
             page-break-after: always;
         }}
@@ -233,7 +269,6 @@ def generate_pdf(input_dir: Path, output_file: Path):
         <p>Generated on: {current_date} <br/>
         From Branch: {branch} <br/>
         From Commit: {commit}</p>
-
     </div>
     <div class='disclaimer'>
         <h2>Draft Disclaimer</h2>
