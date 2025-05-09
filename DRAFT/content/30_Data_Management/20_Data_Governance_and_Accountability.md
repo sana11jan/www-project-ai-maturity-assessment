@@ -28,8 +28,9 @@ The objectives of assessing **Data Governance and Accountability** within AI mat
 |----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Level 1: Ad Hoc / Initial**    | - No formal data policies or standards. <br>- Roles and responsibilities undefined. <br>- No governance processes for AI datasets.             | - No clear data ownership. <br>- Lack of model documentation or audit trails. <br>- No accountability for AI outcomes.                        |
 | **Level 2: Defined / Developing**| - Basic data governance charter defined. <br>- Initial stewardship roles and metadata documentation. <br>- Data use policies in progress.     | - Data owners assigned for some domains. <br>- Preliminary model documentation exists. <br>- Ethics and bias concerns raised informally.     |
-| **Level 3: Managed / Operational**| - Enterprise-wide governance framework in place. <br>- Governance extended to AI training datasets. <br>- Regular reviews of data policies.   | - Model and dataset accountability policies enforced. <br>- Responsible AI review board established. <br>- Incident tracking mechanisms exist. |
-| **Level 4: AI-Optimized / Scalable**| - AI-specific governance practices embedded in data lifecycle. <br>- Dynamic governance for LLMs, agents, and external data sources.         | - End-to-end traceability of data → model → decision. <br>- Accountable parties defined across AI systems. <br>- Continuous Responsible AI audits and policy adaptation. |
+| **Level 3: Managed / Operational**| - Enterprise-wide governance framework with regular policy reviews.
+<br>- Governance specifically extended to AI training datasets and embedded in the AI data lifecycle.
+<br>- Dynamic governance practices for LLMs, agents, and external data sources.   | - Model and dataset accountability policies enforced, with responsible AI review boards in place.<br>- Comprehensive incident tracking and continuous responsible AI audits established. <br>- End-to-end traceability from data to model to decision, with defined accountable roles across AI systems. |
 
 
 ## Metrics
