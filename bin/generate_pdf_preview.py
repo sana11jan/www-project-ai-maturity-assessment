@@ -44,7 +44,15 @@ def validate_markdown(file_path: Path, html: str):
     return headings
 
 def generate_pdf(input_dir: Path, output_file: Path):
-    markdown_files = sorted(input_dir.rglob('*.md'), key=lambda p: str(p))
+    markdown_files = sorted(
+        [
+            p for p in input_dir.rglob('*.md')
+            if re.match(r'^\d{2}', p.name)
+               and re.match(r'^\d{2}', p.relative_to(input_dir).parts[0])
+        ],
+        key=lambda p: str(p)
+    )
+
 
     toc_entries = []
     content_blocks = []
