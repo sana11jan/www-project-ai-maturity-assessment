@@ -22,15 +22,11 @@ The objectives of assessing **Data Training** within an AI maturity model are to
 5. **Maintain Transparency and Auditability:** Enable clear traceability of data origins, transformations, and usage throughout the training pipeline to support audits and regulatory inquiries.
 
 
-## Data Training Maturity Model: Managing and Monitoring AI Training Datasets
-
-| **Maturity Level**               | **Dataset Management** (Accuracy, Consistency, Curation)                                                                                   | **Monitoring & Compliance** (Security, Licensing, Ethical Use)                                                                                  |
-|----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Level 1: Ad Hoc / Initial**    | - Training data is gathered in an unstructured, ad hoc manner. <br>- No labeling standards or curation processes.                          | - No monitoring for compliance, bias, or security. <br>- Use of third-party data without checks for licensing or consent.                        |
-| **Level 2: Defined / Developing**| - Initial guidelines for dataset collection and labeling. <br>- Manual validation of a small subset of training data.                     | - Some basic privacy checks applied. <br>- Awareness of licensing and regulatory obligations is growing.                                        |
-| **Level 3: Managed / Operational**| - Standardized data preparation pipelines in place. <br>- Quality control, deduplication, and labeling accuracy checks automated.          | - Regular compliance reviews and bias audits. <br>- External datasets vetted for usage rights. <br>- Sensitive data is handled securely.        |
-| **Level 4: AI-Optimized / Scalable**| - Continuous data curation informed by model feedback. <br>- Dynamic updates to training data based on concept drift and model gaps.      | - Full auditability and licensing traceability for all datasets. <br>- Ethical training guardrails embedded in pipelines. <br>- Security measures enforced end-to-end. |
-
+| **Maturity Level**                 | **Dataset Management** (Accuracy, Consistency, Curation)                                                                              | **Monitoring & Compliance** (Security, Licensing, Ethical Use)                                                                          |
+| ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| **Level 1: Ad Hoc / Initial**      | - Training data gathered unstructured, ad hoc.<br>- No labeling standards or curation processes.                                      | - No monitoring for compliance, bias, or security.<br>- Third-party data used without licensing or consent checks.                      |
+| **Level 2: Defined / Developing**  | - Initial guidelines for dataset collection and labeling established.<br>- Manual validation for a subset of training data conducted. | - Basic privacy checks applied.<br>- Growing awareness of licensing and regulatory obligations.                                         |
+| **Level 3: Managed / Operational** | - Standardized data preparation pipelines established.<br>- Automated quality control, deduplication, and labeling accuracy checks.   | - Regular compliance and bias audits conducted.<br>- External datasets vetted for rights usage.<br>- Secure handling of sensitive data. |
 
 ## Metrics: 
 
