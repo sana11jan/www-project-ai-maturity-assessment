@@ -10,11 +10,11 @@ tags: AIMA
 
 [1.Introduction](content/1.Introduction.md)
 
-[-- 1.1 Why another maturity model?](content/1.1Why-another-maturity-model.md)
+[-- 1.1 Why another maturity model?](content/00_Intro/20_Why_another_maturity_model)
 
-[-- 1.2 AI today Maturity Models](content/1.2AI-Maturity-Models.md)
+[-- 1.2 AI today Maturity Models](content/00_Intro/30_AI_Maturity_Models)
 
-[2.The AIMA model](content/2.The-AIMA-Model.md)
+[2.The AIMA model](content/00_Intro/40_The_AIMA_Model)
 
 [-- 2.1 Governance](content/10_Governance/00_index.md)
 
