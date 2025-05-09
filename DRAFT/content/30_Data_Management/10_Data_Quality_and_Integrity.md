@@ -5,13 +5,10 @@
 
 In the context of AI readiness, data quality and data integrity are foundational pillars that determine the effectiveness, reliability, and trustworthiness of AI systems. AI models are only as good as the data they are trained on. High-quality data ensures that models learn meaningful patterns, produce accurate predictions, and adapt well to changing environments. Integrity safeguards that data remains consistent, accurate, and trustworthy across its lifecycle i.e. from ingestion and processing to storage and consumption. Without robust data quality and integrity practices, organizations risk introducing bias, inaccuracies, compliance violations, and operational inefficiencies into their AI initiatives, ultimately undermining the business value AI is intended to deliver.
 
-### Definitions
-
+Definitions:
 
 1. Data Quality for AI-ready data refers to the degree to which data is accurate, complete, consistent, timely, relevant, and fit for use in training, validating, and deploying AI models.
-
 2. Data Integrity refers to the assurance that data remains authentic, reliable, and unaltered throughout its lifecycle, with robust mechanisms for traceability, auditability, and protection against corruption or unauthorized modifications.
-
 
 ### Objectives
 
@@ -29,9 +26,7 @@ In the context of AI readiness, data quality and data integrity are foundational
 |----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Level 1: Ad Hoc / Initial**    | - Data is siloed, unstructured, and lacks standard definitions.  <br>- High presence of duplicates, missing values, and noise.  <br>- No validation rules for accuracy or relevance. | - No lineage or traceability.  <br>- Data is manually updated with high risk of tampering or corruption.  <br>- Auditability is absent or unreliable.                     |
 | **Level 2: Defined / Developing**| - Basic profiling and cleansing implemented.  <br>- Initial completeness and consistency rules applied.  <br>- Data cataloging and metadata tracking begins.                      | - Data lineage partially implemented across core systems.  <br>- Change tracking exists but not automated.  <br>- Some access controls in place, but inconsistently enforced. |
-| **Level 3: Managed / Operational**| - Standardized definitions and metrics for quality dimensions (accuracy, completeness, consistency, timeliness).  <br>- Periodic quality checks across structured/unstructured data.  <br>- LLM-specific filters (e.g., toxicity, hallucination-prone data) are applied. | - Full lineage and versioning enabled across AI pipelines.  <br>- Automated monitoring for integrity violations.  <br>- Role-based access control (RBAC) with audit trails. |
-| **Level 4: AI-Optimized / Scalable**| - Data is actively curated based on model feedback (e.g., LLM fine-tuning signals, agent decision quality).  <br>- Real-time quality scoring on streaming and synthetic data.  <br>- Dynamic data augmentation to fill gaps.  <br>- Bias, diversity, and representativeness metrics tracked continuously. | - Immutable, verifiable audit logs for data pipelines.  <br>- Data integrity checkpoints integrated into model lifecycle (pre-training to inference).   <br>- Active anomaly detection flags corruption, drift, or unauthorized changes. |
-
+| **Level 3: Managed / Operational**| - - Standardized definitions and metrics for quality dimensions (accuracy, completeness, consistency, timeliness).- Periodic quality checks across structured/unstructured data.<br>- LLM-specific filters (e.g., toxicity, hallucination-prone data) applied.- Data actively curated based on model feedback, real-time quality scoring, and continuous tracking of bias and representativeness metrics. | - Full lineage and versioning enabled across AI pipelines.- Automated monitoring for integrity violations.<br>- Immutable audit logs, integrated data integrity checkpoints, and active anomaly detection flags for corruption, drift, or unauthorized changes. |
 
 ## Metrics
 
