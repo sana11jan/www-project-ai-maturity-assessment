@@ -13,4 +13,3 @@ Establish secure integration of AI/LLM components by promoting responsible sourc
 * Percentage of AI components with complete inventory and source validation
 * Number of AI-related vulnerabilities identified pre-deployment
 * Coverage of adversarial robustness testing across deployed models
-* 
