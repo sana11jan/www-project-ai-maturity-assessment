@@ -1,4 +1,4 @@
-## Design – Security Requirements
+## Security Requirements
 DRAFT
 
 ### Introduction

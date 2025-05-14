@@ -10,7 +10,7 @@ Transparency and explainability are essential components of trustworthy AI syste
 5) Support Continuous Improvement: Use insights from explanations to refine AI models and processes, enhancing performance and fairness over time.​
 
 
-## Transparency & Explainability Implementation Maturity Model
+### Transparency & Explainability Implementation Maturity Model
 
 | **Maturity Stage** | **Practice Actions (Org + Project)** | **Cultural Actions** |
 |--------------------|--------------------------------------|----------------------|

@@ -12,4 +12,3 @@ This pillar is structured around three focused practices:
 
 3. **User Control and Transparency** – Providing clear, understandable communication about data use and offering users meaningful controls over their data.
 
----

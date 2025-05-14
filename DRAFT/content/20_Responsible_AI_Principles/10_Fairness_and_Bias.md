@@ -1,10 +1,8 @@
 ## Fairness and Bias
 
-**Introduction**
-
 Fairness and bias practices make sure everyone involved in AI work - designers, developers, deployers, and the people making rules - actively tries to spot and fix unwanted biases in data, algorithms and results. Technical fixes like debiasing algorithms and fairness metrics matter but aren't enough on their own. We need organizational structures too - clear roles, policies and ways to learn - that turn ethical AI principles into everyday decisions. AI systems learn biases from historical data, algorithm choices, and human oversight. If we don't watch for these biases, they can keep discrimination going in hiring, lending, healthcare and more areas. A good fairness practice that grows over time combines awareness, defining requirements, using tools for assessment, and constant feedback to build responsible-AI thinking and systems that can handle problems.
 
-**Objectives**
+### Objectives
 
 1. Raise Organization-Wide Fairness Awareness--Ensure that developers, data scientists, product managers, executives, and procurement teams understand common bias sources (data imbalance, label bias, proxy variables) and the business, legal, and reputational risks they pose.
 
@@ -17,7 +15,7 @@ Fairness and bias practices make sure everyone involved in AI work - designers, 
 5. Measure & Iterate on Fairness Outcomes--Track fairness KPIs (e.g., demographic parity difference, false positive/negative rate gaps) through dashboards; conduct regular bias audits and red-teaming exercises to surface emergent issues, then refine policies, training, and tooling accordingly 
 
 
-## Fairness & Bias Implementation Maturity Model
+### Fairness & Bias Implementation Maturity Model
 
 | **Maturity Stage** | **Practice Actions (Org + Project)** | **Cultural Actions** |
 |--------------------|--------------------------------------|----------------------|

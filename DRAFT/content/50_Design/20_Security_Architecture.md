@@ -1,4 +1,4 @@
-## Design – Security Architecture 
+## Security Architecture 
 DRAFT
 
 ### Introduction

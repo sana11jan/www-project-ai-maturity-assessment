@@ -1,8 +1,4 @@
-
 ## Policy and Compliance  
-DRAFT  
-
-### Introduction  
 
 The **Policy & Compliance** practice translates high-level AI-security and Responsible-AI principles into concrete rules and oversight mechanisms. By formalizing AI-specific policies—and continuously verifying that systems, data, and processes comply with internal standards and external regulations—organizations reduce legal exposure, safeguard user trust, and uphold ethical commitments. Effective policy frameworks provide clear guidance to data scientists and engineers, while structured compliance activities (risk assessments, audits, attestations) create documented evidence that AI initiatives operate within agreed security, privacy, and fairness boundaries.  
 
@@ -12,7 +8,7 @@ The **Policy & Compliance** practice translates high-level AI-security and Respo
 - **Ensure and Demonstrate Compliance** with applicable laws, regulations, and internal governance requirements.  
 - **Drive Continuous Policy Improvement** through regular reviews, monitoring, and automation of enforcement and assurance activities.  
 
-# Governance – Policy and Compliance  
+#### Policy and Compliance  
 
 | Maturity Level | Stream A – Develop & Enforce Policies | Stream B – Compliance & Risk Oversight |
 |----------------|----------------------------------------|----------------------------------------|

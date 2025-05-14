@@ -1,6 +1,5 @@
 ## Data Training
 
-### Introduction
 High-quality training data is the backbone of effective AI systems. As organizations scale the use of AI, especially with Large Language Models (LLMs) and Agentic AI, ensuring the accuracy, security, and compliance of training datasets becomes critical. Poorly managed data can introduce bias, hallucinations, or model drift, undermining model performance and trust. Data training readiness goes beyond initial dataset collection. It involves structured curation, ongoing validation, governance of data sourcing, and monitoring for ethical and legal compliance. This is particularly important when using third-party, user-generated, or web-scraped data, which may carry legal, reputational, or privacy risks.
 
 As AI systems become more autonomous, training data pipelines must evolve to support continuous improvement, integrating feedback loops, surfacing blind spots, and retraining models safely and responsibly.
@@ -28,7 +27,7 @@ The objectives of assessing **Data Training** within an AI maturity model are to
 | **Level 2: Defined / Developing**  | - Initial guidelines for dataset collection and labeling established.<br>- Manual validation for a subset of training data conducted. | - Basic privacy checks applied.<br>- Growing awareness of licensing and regulatory obligations.                                         |
 | **Level 3: Managed / Operational** | - Standardized data preparation pipelines established.<br>- Automated quality control, deduplication, and labeling accuracy checks.   | - Regular compliance and bias audits conducted.<br>- External datasets vetted for rights usage.<br>- Secure handling of sensitive data. |
 
-## Metrics: 
+### Metrics: 
 
 1. **Label Accuracy Rate**
    - Measures the percentage of correctly labeled data used for training.

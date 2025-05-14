@@ -1,7 +1,4 @@
 # Governance
-DRAFT  
-
-### Introduction  
 
 Artificial-intelligence systems introduce **unique governance challenges** that go well beyond those of traditional software:
 
@@ -22,4 +19,4 @@ Together these practices create a **governance engine** that:
 * **Enforces “shift-left” accountability** – Requirements are embedded in data pipelines, model cards, and CI/CD gates, not bolted on after deployment.  
 * **Drives measurable improvement** – Continuous metrics expose blind spots, inform investment, and demonstrate due diligence to auditors and regulators.
 
-By assessing maturity against the Governance pillar, organisations can chart a clear, incremental path from **ad-hoc experimentation** to **institutionalised, trustworthy AI**—unlocking innovation while safeguarding users, regulators, and the business itself.# Governance
+By assessing maturity against the Governance pillar, organisations can chart a clear, incremental path from **ad-hoc experimentation** to **institutionalised, trustworthy AI**—unlocking innovation while safeguarding users, regulators, and the business itself.

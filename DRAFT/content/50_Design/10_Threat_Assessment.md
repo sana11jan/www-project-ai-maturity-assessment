@@ -1,4 +1,4 @@
-## Design – Threat Assessment 
+## Threat Assessment 
 DRAFT
 
 ### Introduction
