@@ -1,7 +1,4 @@
 ## Security Architecture 
-DRAFT
-
-### Introduction
 
 The **Security Architecture for AI** practice focuses on designing and implementing robust, secure infrastructure specifically tailored for deploying and monitoring artificial intelligence (AI) systems. AI systems, due to their complexity, evolving threat landscape, and dynamic operational characteristics, require tailored architectural safeguards to mitigate vulnerabilities, ensure reliable operation, and enable rapid incident response. By embedding secure deployment patterns and comprehensive monitoring within the infrastructure, organizations can proactively address threats and maintain continuous protection of their AI-based systems.
 

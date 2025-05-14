@@ -1,7 +1,5 @@
 # Implementation
 
-> COMMENT: Still a draft. Feedback welcome. 
-
 The **Implementation** pillar ensures that secure, ethical, and resilient practices are embedded throughout the AI system development lifecycle.
 
 Unlike traditional software, AI systems introduce additional complexities such as dynamic model behavior, data-driven vulnerabilities, and evolving threat landscapes. These systems often make autonomous decisions based on probabilistic outputs, increasing the potential for unpredictable or unintended behavior. Therefore, organizations must adopt tailored implementation practices that address these unique risks at every phase—from data handling and model training to deployment and post-deployment management. Furthermore, the integration of external AI services and pre-trained models demands heightened scrutiny regarding supply chain integrity and continuous performance monitoring.
@@ -14,4 +12,4 @@ The Implementation pillar is organized into three interconnected practices that 
 
 By adopting these practices, organizations can proactively mitigate risks related to model misuse, bias, adversarial manipulation, and data leakage. In doing so, they not only achieve compliance with evolving legal and ethical standards but also build durable trust with users, partners, and regulators across diverse application domains.
 
-> **Open Points**: Where do we put things from the GenAI Top 10 for LLM Apps ? What about Human-in-the-Loop?   
+> NOTE: Where do we put things from the GenAI Top 10 for LLM Apps ? What about Human-in-the-Loop?   

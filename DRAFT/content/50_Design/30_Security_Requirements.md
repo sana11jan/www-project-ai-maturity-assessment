@@ -1,7 +1,4 @@
 ## Security Requirements
-DRAFT
-
-### Introduction
 
 The **Security Requirements** practice ensures that AI systems are designed with clear, comprehensive guidelines addressing ethical, legal, and technical risks. Unlike traditional software, AI systems introduce unique challenges, including ethical considerations, compliance with emerging regulations, and vulnerabilities arising from complex data dependencies and model behaviors. Establishing explicit, documented security requirements early in the design phase helps mitigate these risks, supporting responsible innovation and secure AI deployments.
 

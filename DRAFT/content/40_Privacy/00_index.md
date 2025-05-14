@@ -1,7 +1,5 @@
 # Privacy
 
-### Introduction  
-
 The **Privacy** pillar addresses the critical need to safeguard personal and sensitive information used by AI systems. AI's dependence on extensive data sets amplifies privacy risks, as data can inadvertently reveal personal details, lead to unauthorized profiling, or be subject to misuse. Proactive privacy management becomes essential, not only for regulatory compliance but also to maintain user trust.
 
 This pillar is structured around three focused practices:

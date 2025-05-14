@@ -1,7 +1,5 @@
 # Design
 
-### Introduction  
-
 The **Design** pillar focuses on proactively integrating security and ethical considerations into the fundamental architecture and conceptualization of AI systems. AI introduces new vulnerabilities such as adversarial attacks and requires careful threat assessment and secure architecture decisions from the earliest stages.
 
 To manage these challenges, this pillar includes three core practices:
