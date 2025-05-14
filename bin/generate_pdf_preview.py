@@ -161,7 +161,7 @@ def generate_pdf(input_dir: Path, output_file: Path):
             left: 0;
             width: 100%;
             text-align: center;
-            opacity: 0.15;
+            opacity: 0.10;
             transform: rotate(-45deg);
             z-index: 9999;
             font-size: 12em;
