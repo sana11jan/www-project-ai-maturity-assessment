@@ -52,11 +52,11 @@ tags: AIMA
 
 [**Design**](./content/50_Design/00_index.md)
 
-[ -- Design – Threat Assessment](./content/50_Design/10_Threat_Assessment.md)
+[ -- Threat Assessment](./content/50_Design/10_Threat_Assessment.md)
 
-[ -- Design – Security Architecture](./content/50_Design/20_Security_Architecture.md)
+[ -- Security Architecture](./content/50_Design/20_Security_Architecture.md)
 
-[ -- Design – Security Requirements](./content/50_Design/30_Security_Requirements.md)
+[ -- Security Requirements](./content/50_Design/30_Security_Requirements.md)
 
 [**Implementation**](./content/60_Implementation/00_index.md)
 
