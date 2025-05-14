@@ -1,8 +1,4 @@
-## Education and Guidance  
-DRAFT  
-
-### Introduction  
-
+## Education and Guidance
 The **Education & Guidance** practice ensures that everyone who influences an AI system—developers, data scientists, product managers, executives, risk officers, even procurement—understands their security, privacy, and ethical responsibilities. Good intentions alone do not create secure or trustworthy AI; people need the right knowledge, tools, and decision-making frameworks at the right moments. By establishing structured learning paths and feedback loops, organizations embed security-first and responsible-AI thinking into daily work, reducing the likelihood of errors and enabling fast, coordinated responses when new threats or regulations emerge.  
 
 ### Objectives  
@@ -11,7 +7,7 @@ The **Education & Guidance** practice ensures that everyone who influences an AI
 - **Provide Role-Specific Training and Resources** that are actionable, current, and aligned with policy and risk priorities.  
 - **Measure Learning Effectiveness and Continuously Improve** curricula, guidance, and tooling based on feedback and emerging challenges.  
 
-# Governance – Education and Guidance  
+### Governance – Education and Guidance  
 
 | Maturity Level | Stream A – Develop & Deliver Knowledge | Stream B – Evaluate & Sustain Competence |
 |----------------|----------------------------------------|-----------------------------------------|

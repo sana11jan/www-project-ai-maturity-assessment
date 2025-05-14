@@ -1,11 +1,8 @@
-### Architecture Assessment
-DRAFT
-
-#### Introduction
+## Architecture Assessment
 
 The AIMA Architecture Assessment practice ensures AI system architectures consistently adhere to best practices, industry standards, and emerging security guidelines. Regular assessments help identify architectural weaknesses early, fostering robust, secure, and ethically compliant AI solutions.
 
-#### Objectives
+### Objectives
 
 - Regularly validate AI architectures against evolving standards and best practices.
 - Identify and remediate architectural vulnerabilities.

@@ -1,7 +1,4 @@
 ## Data Minimization and Purpose Limitation
-DRAFT
-
-### Introduction
 
 The Privacy practice addresses the critical need to safeguard personal and sensitive information used by AI systems. AI's reliance on extensive datasets amplifies privacy risks, such as inadvertent disclosure of personal details, unauthorized profiling, and potential misuse of data. Proactive privacy management is essential not only for regulatory compliance but also for maintaining user trust.
 
@@ -11,7 +8,7 @@ The Privacy practice addresses the critical need to safeguard personal and sensi
 * Limit data use strictly to clearly defined and communicated purposes.
 * Embed privacy measures proactively throughout the AI lifecycle.
 
-# Privacy - Data Minimization and Purpose Limitation
+### Data Minimization and Purpose Limitation
 
 | Maturity Level                                                                                       | Stream A - Define and Enforce Policies                                                                                                                                                                                                                                                                                                                                                                 | Stream B - Monitor and Improve                                                                                                                                                                                                                                                                                                                                                                                        |
 | ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

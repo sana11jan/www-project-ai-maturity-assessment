@@ -1,11 +1,8 @@
-### Requirement-based Testing
-DRAFT
-
-#### Introduction
+## Requirement-based Testing
 
 The AIMA Requirement-based Testing practice ensures AI systems consistently align with defined functional, security, and ethical requirements throughout their lifecycle. By systematically verifying these requirements, organizations ensure reliability, compliance, and ethical integrity of AI deployments, enabling informed and responsible AI use.
 
-#### Objectives
+### Objectives
 
 - Verify compliance with functional, security, and ethical standards.
 - Maintain clear traceability between requirements and testing activities.

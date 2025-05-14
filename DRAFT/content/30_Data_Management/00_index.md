@@ -1,7 +1,4 @@
 # Data Management
-DRAFT
-
-## Introduction
 
 The Data Management pillar addresses the unique and critical role that data plays in AI systems. Unlike traditional software, AI relies fundamentally on large datasets not only for operation but also for training and validation. Consequently, the security, quality, and governance of data significantly impact AI system reliability, fairness, and security.
 

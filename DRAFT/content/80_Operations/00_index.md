@@ -1,7 +1,5 @@
 # Operations
 
-### Introduction  
-
 The **Operations** pillar focuses on securely maintaining AI systems after deployment. Given the complexity and continuous nature of AI operations—including model updates, real-time inference, and dynamic data flows—organizations require dedicated operational practices to manage risks and ensure ongoing reliability, security, and ethical integrity.
 
 This pillar includes three primary practices:

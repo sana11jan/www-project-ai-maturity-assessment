@@ -1,8 +1,5 @@
 ## Data Quality and Integrity
 
-### Introduction
-
-
 In the context of AI readiness, data quality and data integrity are foundational pillars that determine the effectiveness, reliability, and trustworthiness of AI systems. AI models are only as good as the data they are trained on. High-quality data ensures that models learn meaningful patterns, produce accurate predictions, and adapt well to changing environments. Integrity safeguards that data remains consistent, accurate, and trustworthy across its lifecycle i.e. from ingestion and processing to storage and consumption. Without robust data quality and integrity practices, organizations risk introducing bias, inaccuracies, compliance violations, and operational inefficiencies into their AI initiatives, ultimately undermining the business value AI is intended to deliver.
 
 Definitions:
@@ -20,7 +17,7 @@ Definitions:
 
 
 
-## Data Management Maturity Model: Data Quality and Data Integrity
+### Data Management Maturity Model: Data Quality and Data Integrity
 
 | **Maturity Level**              | **Stream A** (Fitness for AI use)                                                                                                                                              | **Stream B** (Trust & Consistency)                                                                                                                                     |
 |----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -28,7 +25,7 @@ Definitions:
 | **Level 2: Defined / Developing**| - Basic profiling and cleansing implemented.  <br>- Initial completeness and consistency rules applied.  <br>- Data cataloging and metadata tracking begins.                      | - Data lineage partially implemented across core systems.  <br>- Change tracking exists but not automated.  <br>- Some access controls in place, but inconsistently enforced. |
 | **Level 3: Managed / Operational**| - - Standardized definitions and metrics for quality dimensions (accuracy, completeness, consistency, timeliness).- Periodic quality checks across structured/unstructured data.<br>- LLM-specific filters (e.g., toxicity, hallucination-prone data) applied.- Data actively curated based on model feedback, real-time quality scoring, and continuous tracking of bias and representativeness metrics. | - Full lineage and versioning enabled across AI pipelines.- Automated monitoring for integrity violations.<br>- Immutable audit logs, integrated data integrity checkpoints, and active anomaly detection flags for corruption, drift, or unauthorized changes. |
 
-## Metrics
+### Metrics
 
 1. **Data Accuracy Rate**
    - **Type:** Data Quality

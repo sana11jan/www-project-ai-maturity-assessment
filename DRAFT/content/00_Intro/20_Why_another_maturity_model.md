@@ -14,6 +14,7 @@ These projects collectively aim to enhance the security and privacy of AI and ML
 ### Addressing the unique challenges of AI
 
 AI systems differ fundamentally from traditional software due to their reliance on data-driven models, adaptive behaviors, and often opaque decision-making processes. These characteristics introduce challenges such as:
+
 * Skills Gap: organizations and users often lack the necessary expertise to manage AI systems effectively or to understand their functionality, limitations, and potential risks. This can lead to mismanagement or improper use of AI technologies, further exacerbating existing challenges.
 * Ethical Dilemmas: AI systems must align with societal and organizational values, avoiding biases, discrimination, and harmful outcomes.
 * Security Risks: AI is vulnerable to threats such as adversarial attacks, data poisoning, which require targeted security practices.
@@ -32,6 +33,7 @@ Existing maturity models do not comprehensively address these factors, leaving o
 In recent months, several AI Maturity Models have emerged, including the MITRE AI Framework, which highlights the need for structured AI assessments. However, these high-level principles often fail to provide actionable steps for organizations. 
 
 The AI Maturity Assessment (AIMA) seeks to bridge this gap by:
+
 * Translating abstract ethical principles into practical, measurable actions.
 * Offering a structured approach to implementing governance, security, fairness, and sustainability in AI projects.
 * Aligning organizational processes with emerging global standards and regulations.
@@ -39,6 +41,7 @@ The AI Maturity Assessment (AIMA) seeks to bridge this gap by:
 ### Supporting Organizations at All Stages of Maturity
 
 AIMA will be designed to be adaptable like OWASP SAMM, supporting organizations at various stages of their AI journey—from those beginning to explore AI capabilities to those operating complex, large-scale AI systems. The model provides:
+
 * Clear benchmarks for assessing current AI practices.
 * Roadmaps for improvement tailored to organizational needs.
 * A collaborative framework that integrates interdisciplinary input from technical, ethical, and regulatory perspectives.

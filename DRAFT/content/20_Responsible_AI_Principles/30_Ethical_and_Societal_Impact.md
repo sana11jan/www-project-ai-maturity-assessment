@@ -10,7 +10,7 @@ Ethical and societal considerations are paramount in the development and deploym
 5) Encourage Stakeholder Engagement: Involve diverse stakeholders in the development and evaluation of AI systems to reflect a broad range of perspectives and values.​
 
 
-## Ethical & Societal Impact Implementation Maturity Model
+### Ethical & Societal Impact Implementation Maturity Model
 
 | **Maturity Stage** | **Practice Actions (Org + Project)** | **Cultural Actions** |
 |--------------------|--------------------------------------|----------------------|

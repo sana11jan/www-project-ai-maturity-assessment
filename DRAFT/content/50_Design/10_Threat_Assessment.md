@@ -1,7 +1,4 @@
-## Design – Threat Assessment 
-DRAFT
-
-### Introduction
+## Threat Assessment
 
 The **Threat Assessment** practice addresses unique security, ethical, and operational risks associated with Large Language Models (LLMs). Given their dynamic nature and extensive interaction with end-users, LLMs introduce specific vulnerabilities such as prompt injection, data leakage, and harmful or unethical outputs. This practice aims to proactively identify, assess, and mitigate these threats systematically, ensuring LLMs are secure, trustworthy, and aligned with organizational values.
 

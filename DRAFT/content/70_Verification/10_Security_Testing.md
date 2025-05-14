@@ -1,11 +1,8 @@
-### AIMA Security Testing
-DRAFT
-
-#### Introduction
+## AIMA Security Testing
 
 The AIMA Security Testing practice is essential for proactively identifying and mitigating security vulnerabilities in AI systems. By systematically performing specialized security assessments tailored for AI, organizations can strengthen their defense against evolving threats such as adversarial attacks, model poisoning, and robustness failures. These security tests ensure AI systems operate safely, securely, and ethically.
 
-#### Objectives
+### Objectives
 
 - Identify vulnerabilities through targeted adversarial testing.
 - Ensure resilience against model poisoning and robustness failures.

@@ -1,7 +1,5 @@
 ## Defect Management
 
-==DRAFT==
-
 ### Objectives
 Continuously identify, categorize, and mitigate AI-specific defects, improving model quality, operational reliability, and reducing potential ethical or legal harm.
 
