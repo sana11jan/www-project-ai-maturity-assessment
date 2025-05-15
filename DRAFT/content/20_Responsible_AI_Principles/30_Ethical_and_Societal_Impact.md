@@ -7,7 +7,7 @@ Ethical and societal considerations are paramount in the development and deploym
 2) Enhance Accountability: Establish clear mechanisms for responsibility and oversight in AI decision-making processes.​
 3) Foster Transparency: Provide clear and accessible information about how AI systems operate and make decisions.​
 4) Ensure Compliance with Ethical Standards: Align AI practices with established ethical guidelines and legal requirements.​
-5) Encourage Stakeholder Engagement: Involve diverse stakeholders in the development and evaluation of AI systems to reflect a broad range of perspectives and values.​
+5) Encourage Stakeholder Engagement: Involve diverse stakeholders in the development and evaluation of AI systems to reflect a broad range of perspectives and values.​.
 
 
 ### Ethical & Societal Impact Implementation Maturity Model
