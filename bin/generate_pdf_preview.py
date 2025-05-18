@@ -35,7 +35,7 @@ def transform_special_blockquotes(md_text: str) -> str:
     return md_text
 
 def validate_markdown(file_path: Path, html: str):
-    headings = re.findall(r'<h([12])>(.*?)</h\1>', html)
+    headings = re.findall(r'<h([123])>(.*?)</h\1>', html)
 
     if VALIDATE_STRUCTURE:
         if not any(level == '1' for level, _ in headings):
@@ -52,7 +52,6 @@ def generate_pdf(input_dir: Path, output_file: Path):
         ],
         key=lambda p: str(p)
     )
-
 
     toc_entries = []
     content_blocks = []
@@ -266,6 +265,11 @@ def generate_pdf(input_dir: Path, output_file: Path):
         .toc li.toc-level-2 {{
             margin-left: 1.5em;
             font-size: 1em;
+        }}
+
+        .toc li.toc-level-3 {{
+            margin-left: 3em;
+            font-size: 0.95em;
         }}
     </style>
 </head>

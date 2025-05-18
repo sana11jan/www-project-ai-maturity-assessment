@@ -1,64 +1,55 @@
-# Project Structure and Contribution Guidelines
+# Markdown Heading Rules
 
-This project is designed for asynchronous collaboration and final PDF generation.
+This project is designed for asynchronous collaboration and final PDF generation.  
 The content is structured as chapters and sections in Markdown. Please follow these guidelines to ensure consistency.
 
 # Folder and File Structure
 
-* Top-level folders represent major chapters (H1).
-* Each folder contains:
-  * 00_index.md → Defines the chapter title (starts with `#`).
-  * Numbered .md files → Each file is a section (starts with `##`).
-  * Optional assets (images, diagrams) stored in /assets/ or relative paths.
+Each top-level folder represents a major chapter (e.g., `Introduction`, `The Model`, `Appendix`).
+Inside the Model Directory, the actual AIMA Model is describe with a repetitive folder/file structure 
+to represent chapters and so on. 
 
-**Example**:
+- `00_index.md` → Defines the chapter title (starts with `##`)
+- Numbered `.md` files → Each file is a section (starts with `###`)
+- Optional: assets (images, diagrams) stored in `/assets/` or relative paths
+
+**Example:**
 ```
-./10_Governance/
-├── 00_index.md                 // Represents the Chapter, starts with "# Governance"
-├── 10_Strategy_and_Metrics.md  // Represents a section, starts with "## Strategy and Metrics"
-├── 20_Policy_and_Compliance.md // Represents a section, starts with "## Policy and Compliance"
+10_The_Model/
+├── 10_Governance/                             // Represents the Governance Pillar
+│   ├── 00_index.md                            // Describes the Governance Pillar (starts with ##)
+│   ├── 10_Strategy_And_Metrics.md             // Strategy & Metrics practice (starts with ###)
+│   ├── 20_Policies_And_Procedures.md          // Policies & Procedures practice (starts with ###)
+│   └── 30_Education_And_Awareness.md          // Education & Awareness practice (starts with ###)
+└── assets/                                    // Diagrams, images, etc.
 ```
 
-Sorting note: The 00_index.md file will always be the first file, hence the 00 prefix. It represents the folder, which is a chapter in AIMA terms. Numbered files (10_, 20_, 30_) define section order.
+## Heading Levels
 
-# Markdown Heading Rules
+| Purpose                | Heading Level |
+|------------------------|----------------|
+| Chapter Title          | `##`           |
+| Section Title          | `###`          |
+| Subsection Title       | `####`         |
+| Nested Subsection      | `#####`        |
 
-|     **File type**      | **Required first heading** |      **Syntax**      |
-|:----------------------:|:--------------------------:|:--------------------:|
-|      00_index.md       |       Chapter title        |      `#` Title       |
-|   Section .md files    |       Section title        |      `##` Title      |
-| Subsections (optional) |        Subheadings         | `###`, `####`, etc.  |
+## Writing Guidelines
 
-* Please use only one `#` heading per chapter — located in 00_index.md.
+- Each `.md` file must begin with the appropriate heading level based on its placement in the folder hierarchy.
+- Use consistent and semantic header levels: do not skip levels (e.g., from `###` directly to `#####`).
 
-# Numbering and File Naming Conventions
+## Assets
 
-* Prefix section files with 10_, 20_, 30_, etc., to control sort order. 00 is reserved for index.
-* Use gaps between numbers for future insertions.
-* Avoid renumbering existing files without a valid reason.
+- Store diagrams and images in the `assets/` folder within the chapter directory.
+- Use relative paths when referencing assets (e.g., `![Diagram](./assets/example.png)`).
 
-# Content Style and Tone for Section Files
+## File Naming
 
-Each section (`10_*.md`, `20_*.md`, etc.) should:
-- Begin with a `##` title (e.g., `## Strategy and Metrics`)
-- Use `###` and `####` for subheadings as needed
-- Be written in a clear, professional tone suitable for an executive or security governance audience
-- Use imperative language: _implement this_, _check that_, etc.
-- Aim for ~3 bullet points per stream. In this early phase, it's fine to have more—we’ll condense later.
-- Use the current best example file for reference: 10_Governance/10_Strategy_and_Metrics.md
+- Use a two-digit numeric prefix for ordering (e.g., `10_Governance.md`, `20_Data_Management.md`)
+- Use snake_case for file names with multiple words.
 
-# Pull Request Requirements
+## Consistency
 
-* Work inside ./docs/DRAFT/.
-* One section or focused change per pull request.
-* Respect the folder structure and naming conventions.
-* Do not change headings or numbering (filename changes) without prior discussion on Slack to avoid merge conflicts.
-* Include assets in the correct folder if used.
-
-# Markdown Style Guidelines
-
-* Use sentence-per-line formatting where possible (makes diffs easier to review).
-* Keep formatting minimal and consistent.
-* Footnotes or references go at the end of the file in a "References" section if necessary.
-
-For questions, reach out via the [Slack Project Channel](https://owasp.slack.com/archives/C089K6KFZMG).
+- Ensure each file begins with the correct heading level.
+- Keep a clean hierarchy that aligns with the folder and filename structure.
+- When in doubt, match the heading level to the file’s role in the outline structure: folder (chapter) → `##`, file (section) → `###`, subsection → `####`, etc.
